@@ -1,0 +1,47 @@
+Descrição dos módulos
+
+main.py
+
+Ponto de entrada do projeto.
+
+Chama a interface de usuário e conecta todos os módulos.
+
+ui/interface.py
+
+Tela para upload da imagem.
+
+Exibe: imagem original, gráfico, categoria e sugestões.
+
+processing/image_processor.py
+
+Funções para redimensionar imagem.
+
+Extrair cores predominantes, proporções do corpo e rosto.
+
+classification/classifier.py
+
+Função para calcular pontuação de cada categoria (Woke / Sexualizado / Fofo).
+
+Retorna categoria principal e pontuações para gráfico.
+
+visualization/radar_chart.py
+
+Função para gerar radar chart / gráfico hexagonal baseado nas pontuações.
+
+Salva gráfico em imagem ou exibe na interface.
+
+suggestions/improve.py
+
+Funções que sugerem melhorias baseadas em tendências de personagens populares.
+
+Retorna lista de ideias para exibir na interface.
+
+requirements.txt
+
+Bibliotecas iniciais sugeridas:
+
+opencv-python
+Pillow
+matplotlib
+numpy
+streamlit   # ou tkinter/pyqt se preferir interface desktop
